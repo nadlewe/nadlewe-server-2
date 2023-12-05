@@ -17,7 +17,7 @@ public class RecommendationService {
 
     @Autowired
     public RecommendationService(WebClient.Builder webClientBuilder) {
-        this.webClient = webClientBuilder.baseUrl("http://fastapi-server:8000").build();
+        this.webClient = webClientBuilder.baseUrl("http://43.201.77.119:5000").build();
     }
 
     public static Mono<CourseResponseDTO> sendRecommendationRequest(CourseRequestDTO request) {
